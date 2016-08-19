@@ -1,0 +1,8 @@
+package: github.com/areed/convertiff
+import:
+- package: golang.org/x/image
+  subpackages:
+  - tiff
+- package: cloud.google.com/go
+  subpackages:
+  - storage
