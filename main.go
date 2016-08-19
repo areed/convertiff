@@ -14,6 +14,7 @@ import (
 
 	"cloud.google.com/go/storage"
 	"golang.org/x/image/tiff"
+	"github.com/nfnt/resize"
 )
 
 const tiffExt = ".tif"
@@ -65,6 +66,7 @@ func convert(bucket *storage.BucketHandle, dst, src string) {
 	if err != nil {
 		log.Fatal(err)
 	}
+	img = resize.Resize(uint(img.Bounds().Size().X / 2), 0, img, resize.Lanczos3)
 	w := bucket.Object(dst).NewWriter(context.Background())
 	defer w.Close()
 	w.ContentType = "image/jpeg"

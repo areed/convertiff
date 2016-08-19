@@ -1,8 +1,8 @@
-hash: 979dd29e398675c789cb6f4bf7a5d4328a3c2b4f179fb1a57ffb9d37fb4a4c0d
-updated: 2016-08-19T11:02:00.666489122+07:00
+hash: 0062a3345ba34dbaf0a6ce0300eee337d0d1abcc7c7ec914ca7bea3ea7952e51
+updated: 2016-08-19T12:59:16.61807735+07:00
 imports:
 - name: cloud.google.com/go
-  version: 05253f6a829103296c351b643f6815aedd81a3fb
+  version: e977e3911f5ba211c715d40c30fc81abfa9400ae
   subpackages:
   - storage
   - compute/metadata
@@ -11,6 +11,8 @@ imports:
   version: f592bd283e9ef86337a432eb50e592278c3d534d
   subpackages:
   - proto
+- name: github.com/nfnt/resize
+  version: 891127d8d1b52734debe1b3c3d7e747502b6c366
 - name: golang.org/x/image
   version: 9f8d0d45877da31f672995d10677ae6a586e31a5
   subpackages:

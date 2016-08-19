@@ -6,3 +6,4 @@ import:
 - package: cloud.google.com/go
   subpackages:
   - storage
+- package: github.com/nfnt/resize
